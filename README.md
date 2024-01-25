@@ -194,3 +194,56 @@ activity_main.xml은 메인 액티비티의 레이아웃 파일입니다.
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 ```
+
+<br>
+
+## 🎨 그림으로 이해하는 RecyclerView
+
+<img width="700" alt="RecyclerView1" src="https://github.com/1three/kotlin-recyclerview/assets/94810322/7d9e5f7d-4180-48b9-9ee8-117511789ed1">
+
+<br>
+
+<img width="700" alt="RecyclerView2" src="https://github.com/1three/kotlin-recyclerview/assets/94810322/d4ac879b-fc27-452d-b27f-91243652238e">
+
+`출처 : 35개 프로젝트로 배우는 Android 앱 개발 feat. Jetpack Compose 초격차 패키지 Online`
+
+```
+Adapter
+- Data와 ViewHolder를 합쳐 ItemView로 보여주는 역할
+
+onCreateViewHolder
+- (아직은 내용이 빈) ViewHolder를 만드는 역할
+
+onBindViewHolder
+- ViewHolder의 View에 Data를 가져와 binding 해주는 역할
+- Data를 호출하기 위한 정보 + 화면에 보여지기 위한 View 정보
+```
+
+<br>
+
+## 🐟 붕어빵 가게로 보는 RecyclerView
+
+_RecyclerView에 대해 이해하기 위해 붕어빵 가게를 비유해보겠습니다._
+
+```
+🏠 Adapter (붕어빵 가게)
+Adapter는 붕어빵 가게 자체를 나타냅니다.
+붕어빵 가게는 손님들이 주문한 붕어빵을 만들어서 제공하는 역할을 합니다.
+마찾가지로, Adapter는 데이터를 가져와서 화면에 보여주는 역할을 수행합니다.
+
+🫘 Data (붕어빵을 만들기 위한 재료)
+Data는 붕어빵을 만들기 위해 필요한 재료들을 나타냅니다.
+붕어빵 가게에서는 붕어빵을 만들기 위해 손님들이 주문한 재료들을 사용합니다.
+마찬가지로, RecyclerView에서는 각 아이템에 표시할 데이터들이 필요합니다.
+
+🦿 ViewHolder (붕어빵 틀)
+ViewHolder는 붕어빵을 담을 틀을 의미합니다.
+붕어빵 가게에서는 붕어빵을 만들기 위해 붕어빵 틀을 사용합니다.
+이 틀은 붕어빵의 형태를 결정하고, 붕어빵을 담을 공간을 제공합니다.
+RecyclerView에서의 ViewHolder도 비슷한 개념으로, 각 아이템의 뷰를 담을 틀 역할을 합니다.
+
+🙆🏻 ItemView (붕어빵 가게 손님)
+ItemView는 붕어빵 가게에 방문한 손님들을 나타냅니다.
+붕어빵 가게에서는 붕어빵을 만들어서 손님들에게 제공합니다.
+RecyclerView에서는 각 아이템의 뷰를 보여주는 역할을 수행합니다.
+```
